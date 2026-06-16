@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Initialize UI Elements
   initNavbarScroll();
+  initMobileNavCollapse();
   initBackToTop();
   initTypingAnimation();
   initScrollSpy();
@@ -1146,4 +1147,25 @@ function initWeb3FormsManager() {
   }
 
   updateWeb3Status();
+}
+/**
+ * Automatically collapses the mobile navigation menu when a section link is clicked
+ */
+function initMobileNavCollapse() {
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const menuToggle = document.getElementById('navbarNav');
+  
+  if (!menuToggle) return;
+
+  // Create a Bootstrap collapse instance out of your menu element
+  const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Only close the menu if it is currently expanded/visible on mobile view
+      if (menuToggle.classList.contains('show')) {
+        bsCollapse.hide();
+      }
+    });
+  });
 }

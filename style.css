@@ -135,7 +135,7 @@ section {
 /* Buttons */
 .btn {
   font-weight: 600;
-  padding: 2% 4%;
+  padding: 10px 20px; /* Cleaned percentage padding for uniform layout */
   border-radius: 8px;
   transition: all var(--transition-medium);
   font-size: 0.9rem;
@@ -144,39 +144,40 @@ section {
 .btn-primary {
   background-color: #5a88ad;
   border-color: #5a88ad;
-  color: #000000;
+  color: #FFFFFF; /* Changed to white for immediate readability */
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
-  background-color: transparent;
 }
 .btn-primary:hover {
   background-color: #3e5c75;
   border-color: #3e5c75;
+  color: #FFFFFF !important; /* Forces text visibility against dark hover color */
   transform: translateY(-1.5px);
   box-shadow: 0 4px 14px rgba(37, 99, 235, 0.22);
 }
 .btn-outline-primary {
-    border-color: #5a88ad;
-    color: #000000;
-    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
-    background-color: transparent;
+  border-color: #5a88ad;
+  color: #5a88ad; /* Set clear accent boundary colors */
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
+  background-color: transparent;
 }
 .btn-outline-primary:hover {
   background-color: #3e5c75;
   border-color: #3e5c75;
+  color: #FFFFFF !important; /* Converts text cleanly to white on background swap */
   transform: translateY(-1.5px);
   box-shadow: 0 4px 14px rgba(37, 99, 235, 0.22);
 }
 .btn-secondary {
-    border-color: #5a88ad;
-    color: #000000;
-    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
-    background-color: transparent;
+  border-color: #CBD5E1;
+  color: var(--text-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  background-color: #FFFFFF;
 }
 .btn-secondary:hover {
-  background-color: #3e5c75;
-  border-color: #3e5c75;
+  background-color: #F1F5F9;
+  border-color: #CBD5E1;
+  color: var(--text-primary) !important;
   transform: translateY(-1.5px);
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.22);
 }
 
 /* Hero Section */
@@ -534,10 +535,13 @@ section {
   margin-bottom: 20px;
 }
 .form-label {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 12px;
+  margin-bottom: 6px;
 }
 .form-control {
   border: 1px solid var(--border);
