@@ -278,7 +278,7 @@ window.openProjectDetails = function(index) {
     demoLink.href = proj.demo;
     demoLink.target = '_blank';
     demoLink.className = 'btn btn-primary d-inline-flex align-items-center gap-2 flex-grow-1 justify-content-center';
-    demoLink.innerHTML = `<i data-lucide="external-link" style="width: 16px; height: 16px;"></i> View Operational Live Presentation`;
+    demoLink.innerHTML = `<i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo`;
     linksContainer.appendChild(demoLink);
   }
 
