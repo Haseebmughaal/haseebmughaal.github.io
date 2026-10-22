@@ -17,8 +17,7 @@
       "PHP",
       "MySQL"
     ],
-    "github": "https://github.com/Haseebmughaal/OffshoreDrip",
-    "demo": "http://offshoreddrip.infinityfree.io/"
+    "github": "https://github.com/Haseebmughaal/OffshoreDrip"
   },
   {
     "title": "Essentia Belle",
@@ -36,12 +35,10 @@
     "technologies": [
       "TypeScript",
       "React",
-      "Express",
-      "Node.js",
+      "ExpressNode.js",
       "SQLite",
       "Tailwind CSS"
     ],
-    "github": "https://github.com/Haseebmughaal/Essentia-Belle",
-    "demo": "https://essentia-belle-production.up.railway.app/"
+    "github": "https://github.com/Haseebmughaal/Essentia-Belle"
   }
 ]
